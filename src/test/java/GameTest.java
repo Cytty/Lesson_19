@@ -188,7 +188,7 @@ public class GameTest {
     }
 
     @Test
-    public void listNameWinAddNamberGreen() {
+    public void listNameWinAddNumberGreen() {
         Game.trafficGreenLight = true;
         Game.maxSpeed = 3;
         String[] players = {
@@ -203,7 +203,7 @@ public class GameTest {
     }
 
     @Test
-    public void listNameWinAddNamberRed() {
+    public void listNameWinAddNumberRed() {
         Game.trafficGreenLight = false;
         Game.maxSpeed = 3;
         String[] players = {
