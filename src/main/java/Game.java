@@ -9,7 +9,7 @@ public class Game {
 
     public static int moves(int[] speeds) {   // расчет количества выбывающих с учетом скорости движения
         int quantityLosers = 0;
-        if (trafficGreenLight == false) {
+        if (!trafficGreenLight) {
             for (int speed : speeds) {
                 if (Math.abs(speed) > Math.abs(maxSpeed)) {
                     quantityLosers++;
@@ -36,7 +36,7 @@ public class Game {
 
     public static int[] winners(int[] speeds) { // формирование списка скоростей победителей
         int[] quantitySpeedWinners;
-        if (trafficGreenLight == true) {
+        if (trafficGreenLight) {
             quantitySpeedWinners = speeds;
         } else {
             int quantityWinners = 0;
